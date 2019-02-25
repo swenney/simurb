@@ -1,0 +1,168 @@
+html, body {width:100%;height:100%}
+
+html, body, div, pre {margin:0px;padding:0px;font-family: monospace;}
+div {box-sizing:border-box;}
+h1 {padding:0px 5px;margin:0px}
+#leftCol, #summaryBox, #klikyBox {padding:5px}
+
+#header {padding:10px 0px; }
+
+#linkIcons {float:left;padding-left:10px;}
+#linkIcons a {/*display:block;margin-bottom:10px*/padding-top:10px}
+#advicedbox {/*position:absolute;
+bottom:0;left:0;*/
+float:left;
+width:200px;
+box-sizing:border-box;
+padding:8px;
+margin-right:0px;
+padding-right:0px;
+overflow:auto;
+height:100px;
+border:1px solid #cdcdcd;
+}
+#advicedbox div:hover {cursor:pointer;background-color:#cdcdcd}
+
+fieldset {}
+legend {font-weight:bold}
+
+/*#leftCol {float:left;width:18%; }
+#rightCol {float:right;width:82%; }*/
+
+#leftCol {float:left;width:540px;position:relative}
+#leftCol form {width: 300px}
+#rightCol {display:flex;flex:1}
+
+#footer{   /* background: red;*/
+    
+    width: 100%;
+    position: absolute;bottom: 0px;
+	padding-bottom:5px;
+	text-align:center;
+    color:grey;
+    }
+#footer a {color:grey;}
+#graphRow {width:100%}
+#graphBox {height:400px;display:flex;flex:1;text-align:center;position:relative;
+}
+#graphBox svg {margin:0px auto}
+#klikyBox {float:right;height:400px;width:15%;
+width: 260px;
+font-family: monospace;
+white-space: pre;
+}
+#map {width:100%}
+
+#klikyScroll {overflow: auto;height:380px;}
+.clearAll {clear:both}
+#klikyTxt label {display:inline-block;width: auto}
+#klikyTxt {clear:both;height:100px;padding:5px;overflow: auto;box-sizing:border-box;width:100%}
+.red {color: #ff0000}
+.bold {font-weight:bold}
+pre span {display:block}
+
+/*.group span {display:block}*/
+.group span:hover {cursor:pointer}
+
+#legendBox div {height: 16px;line-height:16px;vertical-align:middle;}
+#legendBox span, pre.lSpan {border: 1px solid #ffffff;width:10px;height:10px;display:inline-block;
+position:relative;top:2px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+behaviour: url(PIE.htc);}
+
+#summaryBox {position:absolute;top:0px;right:0px;text-align:left}
+
+
+#leve2met.show, #wunschmet.show {display:block}
+#leve2met.hide, #wunschmet.hide {display:none}
+/*3d */
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.bigger {
+  stroke: #f00;
+  stroke-width: 1px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+.label {
+  pointer-events: none;
+  /*stroke: #000;*/
+  font: 9px sans-serif;
+  display:none
+}
+.high {
+  stroke: #000
+}
+
+.clearBoth {clear:both}
+label {width: 170px;display:inline-block}
+.inpCls {width: 40px;}
+
+/*TOOLTIP*/
+#cp1_ColorBar img, #cp2_ColorBar img {display:block}
+#cp1_ColorMap img, #cp2_ColorMap img {display:block}
+#colLeft {float:left;width:440px}
+#colRight {float:left;width:440px}
+.fakeh1 {font-weight:bold;font-size:17px;margin-bottom:10px}
+.fakeh1 span {font-size: 15px}
+#box label {width:90px;display:inline-block}
+.colRow {margin:8px 0px}
+.colBox {width:60px;margin-left:5px;margin-right:20px;height:24px;border:1px solid #000000;background-color:transparent;display:inline-block;}
+a.tooltip, label.tooltip {outline:none;
+	font-size: 8pt;
+	font-weight:normal;
+	text-decoration: none;
+	display:inline-block
+	}
+a.dejtopravo {float:right}
+a.tooltip strong, label.tooltip strong {line-height:30px;}
+a.tooltip:hover, label.tooltip:hover {text-decoration:none;} 
+a.tooltip span, label.tooltip span {
+ z-index:100;display:none; padding:14px 20px;
+ margin-top:-30px; margin-left:20px;
+ line-height:16px;
+	max-width:450px;
+}
+a.tooltip:hover span, label.tooltip:hover span{
+ display:inline; 
+	position:absolute; 
+	color:#111;
+ border:1px solid #cccccc; 
+	background:#cccccc;
+	text-decoration: none;
+	min-width: 560px
+	}
+
+a.levytooltip:hover span, label.levytooltip:hover span {
+margin-left:-410px;
+white-space: normal;
+}
+
+a.hornitooltip:hover span, label.hornitooltip:hover span {
+white-space: normal;
+margin-top:-120px;
+}
+a.hornitooltip2:hover span, label.hornitooltip2:hover span {
+white-space: normal;
+margin-top:-140px;
+}
+
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px}
+ /*CSS3 extras*/
+a.tooltip span, label.tooltip span
+{
+ border-radius:4px;
+ box-shadow: 5px 5px 8px #777777;
+}
+
+a.tooltip img {max-width: 100%;height:auto}
+
