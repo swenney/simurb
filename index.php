@@ -317,10 +317,7 @@ foreach($druhemetody as $k=>$v)
 <a href="#" class="tooltip dejtopravo"> <img src="./img/info.png" alt="Info" height="20" width="20" class="infoImg" />
 <span>
 Choose of method of multifile computation:<br>
-MEAN: <br>
-ScanGraph will compute the mean of modified matrices for all used stimuli. 
-OCCURRANCE: <br>
-Vertices are connected if they are connected in given % (degree of occurrance) of graphs for each stimuli.  
+MEAN: SimUrb will compute the mean of modified matrices for all compressed files. 
 </span>
 </a>
 <br /><br /></div>
@@ -375,14 +372,16 @@ The parameter <i>p</i> takes value from the interval <0,1> and represents the de
 <br>The higher value of <i>p</i>, the higher similarity of the municipalities.
 </span>
 </a><br class="clearBoth" />
-<label for="brosh">Use Bron Kerbosch</label>
+<label for="brosh">Non-disjoint groups</label>
 <?php
 $checked = ((isset($_POST['brosh']) and $_POST['brosh'])?' checked="checked"':'');
 ?>
 <input type="checkbox" name="brosh" id="brosh"<?php echo $checked;?> />
 <a href="#" class="tooltip dejtopravo"> <img src="./img/info.png" alt="Info" height="20" width="20" class="infoImg" />
 <span>
-Use this option when the desired groups are not disjunct.   
+Use this option when the desired groups are not disjoint - the calculation will find all maximal cliques. 
+<br>
+Municipalities in these groups will be similar to each other according to given parameter <i>p</i>.   
 </span>
 </a><br class="clearBoth" />
 <?php
